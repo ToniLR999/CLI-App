@@ -1,0 +1,701 @@
+[
+  {
+    "name": "java.nio.CharBuffer",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "array",
+        "parameterTypes": [ ]
+      },
+      {
+        "name": "arrayOffset",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.Native",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "fromNative",
+        "parameterTypes": [
+          "java.lang.Class",
+          "java.lang.Object"
+        ]
+      },
+      {
+        "name": "dispose",
+        "parameterTypes": [ ]
+      },
+      {
+        "name": "fromNative",
+        "parameterTypes": [
+          "java.lang.reflect.Method",
+          "java.lang.Object"
+        ]
+      },
+      {
+        "name": "toNative",
+        "parameterTypes": [
+          "com.sun.jna.ToNativeConverter",
+          "java.lang.Object"
+        ]
+      },
+      {
+        "name": "fromNative",
+        "parameterTypes": [
+          "com.sun.jna.FromNativeConverter",
+          "java.lang.Object",
+          "java.lang.reflect.Method"
+        ]
+      },
+      {
+        "name": "nativeType",
+        "parameterTypes": [
+          "java.lang.Class"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.nio.DoubleBuffer",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "arrayOffset",
+        "parameterTypes": [ ]
+      },
+      {
+        "name": "array",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.PointerType",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "fields": [
+      {
+        "name": "pointer"
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.NativeMapped",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "toNative",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.Structure$ByValue",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    }
+  },
+  {
+    "name": "com.sun.jna.Pointer",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "fields": [
+      {
+        "name": "peer"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "long"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Void",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "fields": [
+      {
+        "name": "TYPE"
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.Structure$FFIType$FFITypes",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "fields": [
+      {
+        "name": "ffi_type_uint8"
+      },
+      {
+        "name": "ffi_type_uint16"
+      },
+      {
+        "name": "ffi_type_sint16"
+      },
+      {
+        "name": "ffi_type_pointer"
+      },
+      {
+        "name": "ffi_type_uint32"
+      },
+      {
+        "name": "ffi_type_double"
+      },
+      {
+        "name": "ffi_type_void"
+      },
+      {
+        "name": "ffi_type_sint32"
+      },
+      {
+        "name": "ffi_type_sint8"
+      },
+      {
+        "name": "ffi_type_sint64"
+      },
+      {
+        "name": "ffi_type_uint64"
+      },
+      {
+        "name": "ffi_type_longdouble"
+      },
+      {
+        "name": "ffi_type_float"
+      }
+    ]
+  },
+  {
+    "name": "java.nio.LongBuffer",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "array",
+        "parameterTypes": [ ]
+      },
+      {
+        "name": "arrayOffset",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.UnsatisfiedLinkError",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "java.lang.String"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Object",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "toString",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Class",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "getComponentType",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Double",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "fields": [
+      {
+        "name": "value"
+      },
+      {
+        "name": "TYPE"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "double"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.nio.FloatBuffer",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "arrayOffset",
+        "parameterTypes": [ ]
+      },
+      {
+        "name": "array",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.CallbackReference",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "getNativeString",
+        "parameterTypes": [
+          "java.lang.Object",
+          "boolean"
+        ]
+      },
+      {
+        "name": "getFunctionPointer",
+        "parameterTypes": [
+          "com.sun.jna.Callback",
+          "boolean"
+        ]
+      },
+      {
+        "name": "getCallback",
+        "parameterTypes": [
+          "java.lang.Class",
+          "com.sun.jna.Pointer",
+          "boolean"
+        ]
+      },
+      {
+        "name": "initializeThread",
+        "parameterTypes": [
+          "com.sun.jna.Callback",
+          "com.sun.jna.CallbackReference$AttachOptions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.System",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "getProperty",
+        "parameterTypes": [
+          "java.lang.String"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.JNIEnv",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    }
+  },
+  {
+    "name": "java.nio.ShortBuffer",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "arrayOffset",
+        "parameterTypes": [ ]
+      },
+      {
+        "name": "array",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Long",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "fields": [
+      {
+        "name": "value"
+      },
+      {
+        "name": "TYPE"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "long"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.FromNativeConverter",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "nativeType",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.Native$ffi_callback",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "invoke",
+        "parameterTypes": [
+          "long",
+          "long",
+          "long"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.nio.ByteBuffer",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "array",
+        "parameterTypes": [ ]
+      },
+      {
+        "name": "arrayOffset",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.Callback",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    }
+  },
+  {
+    "name": "java.lang.Integer",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "fields": [
+      {
+        "name": "value"
+      },
+      {
+        "name": "TYPE"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "int"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Float",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "fields": [
+      {
+        "name": "value"
+      },
+      {
+        "name": "TYPE"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "float"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.nio.IntBuffer",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "arrayOffset",
+        "parameterTypes": [ ]
+      },
+      {
+        "name": "array",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "java.nio.Buffer",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "position",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Character",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "fields": [
+      {
+        "name": "value"
+      },
+      {
+        "name": "TYPE"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "char"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.WString",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "java.lang.String"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.CallbackReference$AttachOptions",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    }
+  },
+  {
+    "name": "java.lang.Short",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "fields": [
+      {
+        "name": "value"
+      },
+      {
+        "name": "TYPE"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "short"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.String",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "toCharArray",
+        "parameterTypes": [ ]
+      },
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "byte[]",
+          "java.lang.String"
+        ]
+      },
+      {
+        "name": "getBytes",
+        "parameterTypes": [
+          "java.lang.String"
+        ]
+      },
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "byte[]"
+        ]
+      },
+      {
+        "name": "getBytes",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Byte",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "fields": [
+      {
+        "name": "value"
+      },
+      {
+        "name": "TYPE"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "byte"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.Structure",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "fields": [
+      {
+        "name": "memory"
+      },
+      {
+        "name": "typeInfo"
+      }
+    ],
+    "methods": [
+      {
+        "name": "autoWrite",
+        "parameterTypes": [ ]
+      },
+      {
+        "name": "newInstance",
+        "parameterTypes": [
+          "java.lang.Class",
+          "long"
+        ]
+      },
+      {
+        "name": "getTypeInfo",
+        "parameterTypes": [ ]
+      },
+      {
+        "name": "autoRead",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.reflect.Method",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "methods": [
+      {
+        "name": "getReturnType",
+        "parameterTypes": [ ]
+      },
+      {
+        "name": "getParameterTypes",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Boolean",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "fields": [
+      {
+        "name": "TYPE"
+      },
+      {
+        "name": "value"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "boolean"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.IntegerType",
+    "condition": {
+      "typeReachable": "org.jline.terminal.impl.jna.win.Kernel32"
+    },
+    "fields": [
+      {
+        "name": "value"
+      }
+    ]
+  }
+]

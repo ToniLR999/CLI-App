@@ -1,0 +1,5 @@
+dev\tonilr\cliapp\CliappApplication.class
+dev\tonilr\cliapp\commands\HelloComand.class
+dev\tonilr\cliapp\records\DadJokeResponse.class
+dev\tonilr\cliapp\commands\DadJokeCommand.class
+dev\tonilr\cliapp\client\DadJokeClient.class
