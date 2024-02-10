@@ -21,7 +21,7 @@ public class CliappApplication {
 		WebClient client = WebClient.builder().baseUrl("https://icanhazdadjoke.com").defaultHeader("Accept", "application/json").build();
 
 
-	 HttpServiceProxyFactory factory = HttpServiceProxyFactory.builder(WebClientAdapter.forClient(client)).build();
+	HttpServiceProxyFactory factory = HttpServiceProxyFactory.builder(WebClientAdapter.forClient(client)).build();
 			return factory.createClient(DadJokeClient.class);
 	}
 }
