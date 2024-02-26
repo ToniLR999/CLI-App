@@ -7,6 +7,7 @@ import org.springframework.shell.standard.ShellMethod;
 import org.springframework.shell.standard.ShellOption;
 
 import dev.tonilr.cliapp.configuration.ShellHelper;
+import shell.ProgressBar;
 import shell.ProgressCounter;
 
 @ShellComponent
@@ -16,6 +17,9 @@ public class EchoCommand {
 
     @Autowired
     ProgressCounter progressCounter;
+
+    @Autowired
+    ProgressBar progressBar;
 
     @ShellMethod("Displays greeting message to the user whose name is supplied")
     public String echo(@ShellOption({"-N", "--name"}) String name) {
@@ -37,14 +41,23 @@ public class EchoCommand {
         Thread.sleep(100);
     }
     progressCounter.reset();
-}
-
-@ShellMethod("Displays progress counter (with spinner)")
-public void progressCounter() throws InterruptedException {
-    for (int i = 1; i <=100; i++) {
-        progressCounter.display(i, "Processing");
-        Thread.sleep(100);
     }
-    progressCounter.reset();
-}
+
+    @ShellMethod("Displays progress counter (with spinner)")
+    public void progressCounter() throws InterruptedException {
+        for (int i = 1; i <=100; i++) {
+            progressCounter.display(i, "Processing");
+            Thread.sleep(100);
+        }
+        progressCounter.reset();
+    }
+
+    @ShellMethod("Displays progress bar")
+    public void progressBar() throws InterruptedException {
+        for (int i = 1; i <=100; i++) {
+            progressBar.display(i);
+            Thread.sleep(100);
+        }
+        progressBar.reset();
+    }
 }
