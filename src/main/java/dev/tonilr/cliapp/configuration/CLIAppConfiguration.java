@@ -3,6 +3,9 @@ package dev.tonilr.cliapp.configuration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.shell.jline.PromptProvider;
+
+import shell.ProgressCounter;
+
 import org.jline.terminal.Terminal;
 import org.jline.utils.AttributedString;
 import org.springframework.context.annotation.Lazy;
@@ -21,5 +24,10 @@ public class CLIAppConfiguration implements PromptProvider{
     public ShellHelper shellHelper(@Lazy Terminal terminal) {
             return new ShellHelper(terminal);
     }
+
+	@Bean
+	public ProgressCounter progressCounter(@Lazy Terminal terminal) {
+    return new ProgressCounter(terminal);
+}
 
 }
