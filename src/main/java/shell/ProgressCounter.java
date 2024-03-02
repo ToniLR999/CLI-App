@@ -47,6 +47,7 @@ public class ProgressCounter {
     }
 
 
+
     public void display() {
         if (!started) {
             terminal.writer().println();
