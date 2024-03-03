@@ -1,6 +1,5 @@
 package dev.tonilr.cliapp.commands;
 
-import org.jline.terminal.Terminal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;

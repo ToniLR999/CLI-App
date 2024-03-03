@@ -1,8 +1,6 @@
 package shell;
 
-import org.hibernate.validator.internal.util.stereotypes.Lazy;
 import org.jline.terminal.Terminal;
-import org.springframework.context.annotation.Bean;
 
 public class ProgressCounter {
      private static final String CUU = "\u001B[A";
