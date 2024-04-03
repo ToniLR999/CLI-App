@@ -1,5 +1,6 @@
 package dev.tonilr.cliapp.commands;
 
+import org.springframework.shell.command.annotation.Command;
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
 
@@ -15,7 +16,7 @@ public class DadJokeCommand {
         this.dadJokeClient = dadJokeClient;
     }
    
-    @ShellMethod(key = "RandomJoke",value ="I will say a random dad joke")
+    @ShellMethod(key = {"RandomJoke","Randomjoke","randomjoke","randomJoke"},value ="I will say a random dad joke")
     public String getRandomDadJoke(){
         DadJokeResponse random = dadJokeClient.RandomDadJoke();
 

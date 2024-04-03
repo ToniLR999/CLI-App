@@ -33,3 +33,54 @@
 1709375838220:goodbye
 1709375951797:help
 1709375960533:goodbye toni
+1711725756741:help
+1711725760669:hello
+1711725766534:randomjoke
+1711725769878:RandomJOke
+1711725773491:RandomJoke
+1711726002407:exit
+1711726597710:help
+1711727687796:history
+1711727721719:completion bash
+1711727845528:help
+1711803860786:DisplayDir C:\\aplicaciones
+1711803880467:DisplayDir "C:\\aplicaciones"
+1711804396523:help
+1711804417284:displaydir "C:\\aplicaciones"
+1711804435305:displaydir C:\\aplicaciones
+1711804754325:help
+1711804764368:displaydir C:\\aplicaciones
+1711804782886:displaydir C:
+1711805212854:stacktrace
+1711813083088:help
+1711813097108:displaydir C:\\Program Files
+1711813112692:displaydir C:/Program Files
+1711813629750:displaydir C:\\\\Program Files
+1711813680246:help
+1711813701689:displaydir C:\\\\Program Files
+1711813745756:help
+1711813769495:displaydir C:\\Program Files
+1711813777037:displaydir C:\\\\Program Files
+1711813863572:displaydir "C:\\\\Program Files"
+1711814080554:help
+1711814094758:displaydir C:\\Program Files
+1711814111574:displaydir "C:\\\\Program Files"
+1711814161010:displaydir "C:\\Program Files"
+1711814334337:help
+1711814352309:displaydir C:\\Program Files
+1711814364642:displaydir C:\\\\Program Files
+1711814649438:help
+1711814663523:displaydir C:\\Program Files
+1711814887237:help
+1711814914816:displaydir C:\\Program Files
+1711815148547:help
+1711815158628:displaydir C:\\Program Files
+1711815167284:displaydir "C:\\Program Files"
+1711815365600:displaydir C:\\Program Files
+1711815371817:displaydir C:\\\\Program Files
+1711815459672:displaydir "C:\\Program Files"
+1711815543964:displaydir "C:\\\\Program Files"
+1711815708219:displaydir C:\\\\Program Files
+1711815740666:displaydir "C:\\Program Files"
+1711815870027:displaydir C:\\\\Program Files
+1711816201767:displaydir C:\\Program Files
