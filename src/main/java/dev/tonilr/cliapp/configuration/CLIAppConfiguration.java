@@ -7,12 +7,25 @@ import org.springframework.shell.jline.PromptProvider;
 import shell.ProgressBar;
 import shell.ProgressCounter;
 
+import java.util.Locale;
+
 import org.jline.terminal.Terminal;
 import org.jline.utils.AttributedString;
 import org.springframework.context.annotation.Lazy;
 
 @Configuration
 public class CLIAppConfiguration implements PromptProvider{
+
+	private Locale lang;
+
+	public Locale getLang() {
+        return lang;
+    }
+
+    public void setLang(Locale lang) {
+        this.lang = lang;
+    }
+
 
 	@Override
 	public final AttributedString getPrompt() {
