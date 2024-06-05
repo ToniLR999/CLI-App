@@ -6,11 +6,15 @@ import org.springframework.shell.standard.ShellMethod;
 import org.springframework.shell.standard.ShellOption;
 
 import dev.tonilr.cliapp.configuration.ShellHelper;
+import dev.tonilr.cliapp.configuration.VariablesConfiguration;
 import shell.ProgressBar;
 import shell.ProgressCounter;
 
 @ShellComponent
 public class EchoCommand {
+
+    VariablesConfiguration cliappconfig = new VariablesConfiguration();
+    
     @Autowired
     ShellHelper shellHelper;
 

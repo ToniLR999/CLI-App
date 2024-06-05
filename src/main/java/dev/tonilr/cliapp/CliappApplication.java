@@ -1,7 +1,5 @@
 	package dev.tonilr.cliapp;
 
-import java.util.Locale;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -13,14 +11,20 @@ import org.springframework.web.service.invoker.HttpServiceProxyFactory;
 import dev.tonilr.cliapp.client.DadJokeClient;
 
 @SpringBootApplication
-public class CliappApplication {
+public class CliappApplication{
 
+	
 	public static void main(String[] args) {
 		
     ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
     messageSource.setBasenames("lang/messages");
     messageSource.setDefaultEncoding("UTF-8");
-    System.out.println(messageSource.getMessage("hello", null, Locale.ITALIAN));
+    //System.out.println(messageSource.getMessage("hello", null, Locale.ITALIAN));
+	//System.out.println(messageSource.getMessage("hello", null, cliappconfig.getLang()));
+	//System.out.println(cliappconfig.getLang());
+
+
+	
 		SpringApplication.run(CliappApplication.class, args);
 	}
 
