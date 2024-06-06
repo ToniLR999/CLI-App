@@ -96,3 +96,23 @@
 1717607438018:displaydir C:\\aplicaciones
 1717607471651:displaydir C:/aplicaciones
 1717607869868:displaydir C:/aplicaciones
+1717608028777:displaydir c:/aplicaciones
+1717608227895:history
+1717609156113:displaydir c:/aplicaciones
+1717609194177:movedir c:/aplicaciones/prueba.txt c:/aplicaciones/CLIApp
+1717609198242:help
+1717609206975:movefile c:/aplicaciones/prueba.txt c:/aplicaciones/CLIApp
+1717609249017:movefile "c:/aplicaciones/prueba.txt" "c:/aplicaciones/CLIApp"
+1717609311388:stacktrace
+1717609367425:displaydir c:/aplicaciones
+1717609477935:movefile c:/aplicaciones/prueba.txt c:/aplicaciones/CLIApp
+1717609500943:stacktrace
+1717609539573:movefile c:/aplicaciones/prueba.txt c:/aplicaciones/CLIApp/prueba1.txt
+1717703895213:help
+1717703911309:movefile c:/aplicaciones/prueba1.txt c:/aplicaciones
+1717703967103:help
+1717703987708:movefile c:/aplicaciones/prueba1.txt c:/aplicaciones
+1717704354163:movefile c:/aplicaciones/prueba1.txt c:/aplicaciones/cliapp
+1717704421246:movefile c:/aplicaciones/javascript30 c:/aplicaciones/cliapp
+1717704430278:stacktrace
+1717704471033:movefile c:/aplicaciones/javascript30 c:/aplicaciones/cliapp

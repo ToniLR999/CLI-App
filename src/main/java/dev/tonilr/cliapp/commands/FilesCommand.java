@@ -2,6 +2,9 @@ package dev.tonilr.cliapp.commands;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
@@ -22,6 +25,22 @@ public class FilesCommand {
          System.out.println(contents[i]);
 
     }
-
 }
+
+    @ShellMethod(key = {"MoveFile","Movefile","moveFile","movefile"},value ="Move a file to a target url *Note: Use /*")
+    public void moveFiles(@ShellOption({"-N", "--fromUrl"}) String fromUrl,@ShellOption({"-N", "--targetUrl"}) String targetUrl)  throws IOException {
+        Integer finalpath = fromUrl.lastIndexOf("/");
+      Path temp = Files.move(Paths.get(fromUrl),Paths.get(targetUrl+""+fromUrl.substring(finalpath, fromUrl.length())));
+
+      if(temp != null)
+      {
+          System.out.println("File moved successfully");
+      }
+      else
+      {
+          System.out.println("Failed to move the file");
+      }
+    }
+
+
 }
