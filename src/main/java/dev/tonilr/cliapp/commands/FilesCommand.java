@@ -27,7 +27,7 @@ public class FilesCommand {
     }
 }
 
-    @ShellMethod(key = {"MoveFile","Movefile","moveFile","movefile"},value ="Move a file to a target url *Note: Use /*")
+    @ShellMethod(key = {"MoveFile","Movefile","moveFile","movefile"},value ="Move a file or a folder to a target url *Note: Use /*")
     public void moveFiles(@ShellOption({"-N", "--fromUrl"}) String fromUrl,@ShellOption({"-N", "--targetUrl"}) String targetUrl)  throws IOException {
         Integer finalpath = fromUrl.lastIndexOf("/");
       Path temp = Files.move(Paths.get(fromUrl),Paths.get(targetUrl+""+fromUrl.substring(finalpath, fromUrl.length())));
@@ -42,5 +42,23 @@ public class FilesCommand {
       }
     }
 
+    @ShellMethod(key = {"DeleteFile","Deletefile","deleteFile","deletefile"},value ="Delete a file or a folder to a target url *Note: Use /*")
+    public void deleteFile(@ShellOption({"-N", "--fromUrl"}) String Url) throws IOException {
+            File fileToDelete = new File(Url);
 
+            boolean success = fileToDelete.delete();
+
+            if (success) {
+                System.out.println("Folder or file deleted successfully");
+            }else{
+                System.out.println("Error on deleting the file or folder");
+
+            }
+    }
+
+    @ShellMethod(key = {"UpdateFile","updatefile","updateFile","updatefile"},value ="Update a file or a folder name *Note: Use /*")
+    public void updateFile(@ShellOption({"-N", "--fromUrl"}) String Url) throws IOException {
+
+
+  }
 }
