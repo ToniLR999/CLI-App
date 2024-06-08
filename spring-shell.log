@@ -125,3 +125,9 @@
 1717838973652:help goodbye
 1717861429751:help
 1717861455508:deletefile c:/aplicaciones/cliapp/prueba1.txt
+1717862219879:deletefile c:/aplicaciones/prueba
+1717862670360:update c:/aplicaciones/prueba1.txt prueba2.txt
+1717862680772:updatefile c:/aplicaciones/prueba1.txt prueba2.txt
+1717862724878:updatefile C:/aplicaciones/prueba1.txt prueba2.txt
+1717863319752:updatefile c:/aplicaciones/prueba1.txt prueba2.txt
+1717863625956:updatefile c:/aplicaciones/prueba cositas

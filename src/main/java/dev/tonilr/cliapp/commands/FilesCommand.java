@@ -57,8 +57,18 @@ public class FilesCommand {
     }
 
     @ShellMethod(key = {"UpdateFile","updatefile","updateFile","updatefile"},value ="Update a file or a folder name *Note: Use /*")
-    public void updateFile(@ShellOption({"-N", "--fromUrl"}) String Url) throws IOException {
+    public void updateFile(@ShellOption({"-N", "--Url"}) String Url,@ShellOption({"-N", "--NewFileName"}) String NewFileName) throws IOException {
+        Integer finalpath = Url.lastIndexOf("/");
+        Path temp = Files.move(Paths.get(Url),Paths.get(Url.substring(0,finalpath)+"/"+NewFileName));
 
-
+System.out.println(Url.substring(0,finalpath)+"/"+NewFileName);
+        if(temp != null)
+        {
+            System.out.println("File updated successfully");
+        }
+        else
+        {
+            System.out.println("Failed to update the file");
+        }
   }
 }
