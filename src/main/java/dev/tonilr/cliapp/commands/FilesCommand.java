@@ -61,7 +61,7 @@ public class FilesCommand {
         Integer finalpath = Url.lastIndexOf("/");
         Path temp = Files.move(Paths.get(Url),Paths.get(Url.substring(0,finalpath)+"/"+NewFileName));
 
-System.out.println(Url.substring(0,finalpath)+"/"+NewFileName);
+        System.out.println(Url.substring(0,finalpath)+"/"+NewFileName);
         if(temp != null)
         {
             System.out.println("File updated successfully");
@@ -71,4 +71,20 @@ System.out.println(Url.substring(0,finalpath)+"/"+NewFileName);
             System.out.println("Failed to update the file");
         }
   }
+
+  @ShellMethod(key = {"createFile","createfile","createFile","createfile"},value ="Create a file or a folder name *Note: Use /*")
+  public void createFile(@ShellOption({"-N", "--Url"}) String Url) throws IOException {
+    Path newFilePath = Paths.get(Url);
+    Path temp = Files.createFile(newFilePath);
+
+    if(temp != null)
+    {
+        System.out.println("File created successfully");
+    }
+    else
+    {
+        System.out.println("Failed to created the file");
+    }
+
+    }
 }
