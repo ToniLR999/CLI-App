@@ -5,6 +5,7 @@ import org.springframework.web.service.annotation.GetExchange;
 import dev.tonilr.cliapp.records.CurrencyApiResponse;
 
 public interface CurrencyApiClient {
-  @GetExchange("/")
+    @GetExchange("/api/currency.php")
     CurrencyApiResponse CurrencyApi();
+
 }

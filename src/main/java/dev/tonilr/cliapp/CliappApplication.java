@@ -40,7 +40,7 @@ public class CliappApplication{
 
 	@Bean
 	CurrencyApiClient currencyApiClient(){
-		WebClient client = WebClient.builder().baseUrl("https://icanhazdadjoke.com").defaultHeader("Accept", "application/json").build();
+		WebClient client = WebClient.builder().baseUrl("https://www.amdoren.com").defaultHeader("Accept", "application/json").build();
  
 
 	HttpServiceProxyFactory factory = HttpServiceProxyFactory.builder(WebClientAdapter.forClient(client)).build();
