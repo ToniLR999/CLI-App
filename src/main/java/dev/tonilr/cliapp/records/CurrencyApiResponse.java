@@ -1,5 +1,5 @@
 package dev.tonilr.cliapp.records;
 
-public record CurrencyApiResponse(String api_key, String fromCurrency, String toCurrency, Double amount) {
+public record CurrencyApiResponse(Integer error, String error_message, Double amount) {
 
 }

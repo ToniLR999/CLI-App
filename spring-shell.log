@@ -133,3 +133,11 @@
 1717863625956:updatefile c:/aplicaciones/prueba cositas
 1717951075138:help
 1717951112823:createfile c:/aplicaciones/prueba3.txt
+1718380801650:help
+1718381051496:sample-tables
+1718381064233:table-formatter-demo
+1718381090105:convertcurrency usd eur 1000
+1718381160149:convertcurrency eur jpy 1000
+1718381196895:stacktrace
+1718381330682:convertcurrency eur jpy 1000
+1718381343385:convertcurrency usd jpy 1000
